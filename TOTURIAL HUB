@@ -1,0 +1,107 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "Blue Hub", HidePremium = false, SaveConfig = true, ConfigFolder = "Novenov",IntroText = "Blue Hub"})
+
+local Tab = Window:MakeTab({
+	Name = "Tab Main",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+OrionLib:MakeNotification({
+	Name = "Blue Hub Execute",
+	Content = "Notification content... what will it say??",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+
+Tab:AddButton({
+	Name = "Speed (30)",
+	Callback = function()
+	  _G.WS = 30
+local Humanoid = game:GetService("Players").LocalPlayer.Character.Humanoid
+Humanoid:GetPropertyChangedSignal("WalkSpeed"):Connect(function()
+    Humanoid.WalkSpeed = _G.WS
+end)
+Humanoid.WalkSpeed = _G.WS
+
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Speed (50)",
+	Callback = function()
+	  _G.WS = 50
+local Humanoid = game:GetService("Players").LocalPlayer.Character.Humanoid
+Humanoid:GetPropertyChangedSignal("WalkSpeed"):Connect(function()
+    Humanoid.WalkSpeed = _G.WS
+end)
+Humanoid.WalkSpeed = _G.WS
+
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Speed (70)",
+	Callback = function()
+	  _G.WS = 70
+local Humanoid = game:GetService("Players").LocalPlayer.Character.Humanoid
+Humanoid:GetPropertyChangedSignal("WalkSpeed"):Connect(function()
+    Humanoid.WalkSpeed = _G.WS
+end)
+Humanoid.WalkSpeed = _G.WS
+
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Speed (100)",
+	Callback = function()
+	  _G.WS = 100
+local Humanoid = game:GetService("Players").LocalPlayer.Character.Humanoid
+Humanoid:GetPropertyChangedSignal("WalkSpeed"):Connect(function()
+    Humanoid.WalkSpeed = _G.WS
+end)
+Humanoid.WalkSpeed = _G.WS
+
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Speed (400)",
+	Callback = function()
+	  _G.WS = 400
+local Humanoid = game:GetService("Players").LocalPlayer.Character.Humanoid
+Humanoid:GetPropertyChangedSignal("WalkSpeed"):Connect(function()
+    Humanoid.WalkSpeed = _G.WS
+end)
+Humanoid.WalkSpeed = _G.WS
+
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Speed (800)",
+	Callback = function()
+	  _G.WS = 800
+local Humanoid = game:GetService("Players").LocalPlayer.Character.Humanoid
+Humanoid:GetPropertyChangedSignal("WalkSpeed"):Connect(function()
+    Humanoid.WalkSpeed = _G.WS
+end)
+Humanoid.WalkSpeed = _G.WS
+
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Speed (3k)",
+	Callback = function()
+	  _G.WS = 3000
+local Humanoid = game:GetService("Players").LocalPlayer.Character.Humanoid
+Humanoid:GetPropertyChangedSignal("WalkSpeed"):Connect(function()
+    Humanoid.WalkSpeed = _G.WS
+end)
+Humanoid.WalkSpeed = _G.WS
+
+  	end    
+})
+
